@@ -5,8 +5,8 @@ class Synth {
     public:
         Synth();
         ~Synth();
-        generateSine();
-        generateSawTooth();
-}
+        void generateSine();
+        void generateSawTooth();
+};
 
 #endif

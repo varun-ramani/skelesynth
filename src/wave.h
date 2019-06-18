@@ -31,10 +31,13 @@ class Wave {
         Wave(char* filename, uint32_t sampleRate);
         ~Wave();
         bool write();
+        void generateSine(int ms, double frequency);
+        void generateSaw(int ms);
 
     private:
         char* filename;
-        std::vector<int> data;
+        std::vector<double> data;
+        int numSamples;
         WaveHeader header;
 };
 
