@@ -5,8 +5,8 @@ using namespace std;
 
 int main(int argc, char const *argv[]) {
     cout << "Welcome to Skelesynth!" << endl;
-    Wave wavFile = Wave("hello.wav", 50000);
-    wavFile.generateSine(100, 1);
+    Wave wavFile = Wave("hello.wav", 100000);
+    wavFile.generateSine(1000, 0.5);
     // wavFile.generateSine(100, 2);
     // wavFile.generateSine(100, 3);
     // wavFile.generateSine(100, 4);

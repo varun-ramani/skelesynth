@@ -19,7 +19,7 @@ void Wave::generateSine(int ms, double frequency) {
     double period = 2*M_PI / header.sampleRate;
     printf("Period: %f seconds\n", period);
     for (int i = 0; i < samples; i++) {
-        data.push_back(sin(frequency*i / (header.sampleRate / 1000)));
+        data.push_back(sin(frequency*i / (header.sampleRate / 3000)));
     }
     this->numSamples += samples;
 }
